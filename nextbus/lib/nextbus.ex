@@ -33,4 +33,16 @@ defmodule Nextbus do
     stop_data = data["stop"]
     stop_data
   end
+
+  def get_nextbus(stop_id, direction) do
+    resp = HTTPoison.get!("http://realtime.mbta.com/developer/api/v2/predictionsbyroutes?api_key=qOvLKXlU8Equ8FBGnIMWaA&routes=#{stop_id}&format=json")
+    data = Poison.decode!(resp.body)
+    route = List.first(data["mode"])["route"]
+    path = List.first(route)["direction"]
+    Enum.map path, fn trip ->
+      if trip["direction_id"] == "#{direction}" do
+        trip["trip"]
+      end
+    end
+  end
 end
