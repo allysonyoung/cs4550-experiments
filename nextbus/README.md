@@ -1,21 +1,8 @@
 # Nextbus
 
-**TODO: Add description**
+The purpose of this experiment is to determine if the essential data pertaining to the realtime bus tracking and nearby stop suggestion features are obtainable using the MBTA API.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `nextbus` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:nextbus, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/nextbus](https://hexdocs.pm/nextbus).
-
+### Running this Locally
+Clone this repo and cd into this `nextbus` directory. Run the `iex -S mix` to run the elixir shell and execue the following commands...
+  * NEARBY STOPS BY LOCATION - `Nextbus.get_nearby_stops(42.346961, -71.076640)`
+  * ROUTES BY STOP - `Nextbus.get_routes(11384)`

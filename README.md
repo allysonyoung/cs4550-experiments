@@ -4,8 +4,10 @@ This is the repo for our CS4550 project experiments. Our app is a tool that comm
 ## Experiments
 
 ### Alerts
+Using the MBTA API, we are able to query information about alerts in terms of its header, severity, and affected services. This is currently built into an elixir application.
 
 ### JS Front End Framework (React)
 We will be using React for our front end framework, and we will be using the Google Maps API to render maps and visualize anything we need for the features in our app. 
 
 ### Next Bus
+Also using the MBTA API, we are able to query data about the nearby stops from a given location and provide supplemental information about where the buses are for that stop. This is currently built into an elixir application.
