@@ -1,10 +1,10 @@
-// Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
+/**
+ * TODO: incorporate Google Maps into React. This was taken from the Google Maps API Example in their documentation. 
+ */
+
 var map, infoWindow;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('geolocation-map'), {
     center: {lat: -34.397, lng: 150.644},
     zoom: 15
   });
