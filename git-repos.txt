@@ -1,0 +1,5 @@
+Lisa Chan and Allyson Young - MBTA App
+
+Git Repos
+Experiments repo: https://github.com/allysonyoung/cs4550-experiments
+Project repo: https://github.com/allysonyoung/mbta-app
