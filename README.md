@@ -5,6 +5,7 @@ This is the repo for our CS4550 project experiments. Our app is a tool that comm
 
 ### Alerts
 
-### Maps
+### JS Front End Framework (React)
+We will be using React for our front end framework, and we will be using the Google Maps API to render maps and visualize anything we need for the features in our app. 
 
 ### Next Bus
